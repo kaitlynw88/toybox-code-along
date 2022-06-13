@@ -16,6 +16,5 @@
 // h4: 34px;
 // h5: 14px;
 
-header {
-    width:100%;
-}
+@import "./partials/setup";
+@import "./partials/variables";
