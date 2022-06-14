@@ -1,0 +1,20 @@
+header{
+    background-color: $tertiary;
+}
+
+header .wrapper{
+    display:flex;
+    width:100%;
+    margin:0;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerImgContainer{
+    flex-basis:48%;
+}
+.textContainer {
+    flex-basis:48%;
+}
+h3{
+    font-size: 1.2rem;
+}

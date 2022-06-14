@@ -468,3 +468,35 @@ section {
 .menuButton {
   cursor: pointer;
 }
+
+header {
+  background-color: #f8fbf3;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerImgContainer {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.textContainer {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
