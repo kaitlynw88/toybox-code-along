@@ -1,0 +1,62 @@
+// Breakpoints at 1000/800/500
+
+@media (max-width: 1000px){
+    // product Categories
+    .categoryList .items{
+        padding:25px;
+    }
+    // footer
+    .footerFlexContainer{
+        flex-direction: column;
+        align-items: center;
+        .footerNav{
+            width:100%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    // header
+    header .wrapper{
+        flex-direction: column;
+        .headerImgContainer{
+            width:100%;
+        }
+        img{
+            max-height: 350px;
+            object-fit: cover;
+            width:100%;
+        }
+    }
+    // category
+    .categoryList .items{
+        padding:15px;
+        margin:20px 15px;
+    }
+    // Play Section
+    .play .wrapper .playContent{
+        width: 100%;
+        padding:15px;
+    }
+}
+
+@media (max-width:500px){
+    // category
+    .categoryList .items{
+        width: 100%;
+        margin:10px;
+    }
+    // Play Section
+    .play .wrapper .playContent{
+        padding:10px 10px 15px;
+    }
+    // footer
+    .footerNav nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social{
+        flex-direction: column;
+        align-items: center;
+    }
+}
