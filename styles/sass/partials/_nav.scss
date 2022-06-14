@@ -26,6 +26,7 @@
     border-top:1px solid rgba(8, 75, 109, 0.08);
     border-bottom: 1px solid rgba(8, 75, 109, 0.08);
     background-color: $solidWhite;
+    z-index: 10;
     .wrapper{
         display: flex;
         justify-content: space-between;
