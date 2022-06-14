@@ -1,0 +1,54 @@
+// Skip Link
+
+.skip-link{
+    position: absolute;
+    left:-1000px;
+    top:5px;
+    background-color: $solidWhite;
+    color:black;
+    z-index: 10;
+    &:focus{
+        left:0;
+    }
+}
+
+// Announcements
+
+.announcements{
+    text-align: center;
+    padding:10px 0;
+}
+
+// navBar
+.navBar{
+    position: sticky;
+    top:0;
+    border-top:1px solid rgba(8, 75, 109, 0.08);
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type=checkbox]{
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.searchCart{
+    display: flex;
+    .menuIcon, .bag{
+        margin-right: 15px;
+    }
+    .bag{
+        display:flex;
+    }
+    
+}
+
+
+// Slide Out Nav
+.slideOutNav{
+    display: none;
+}
