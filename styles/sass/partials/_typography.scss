@@ -6,3 +6,68 @@
             url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2');
     font-weight: normal;
 }
+
+/* importing Jakarta Sans font in bold */
+@font-face {
+    font-family: "Jakarta Sans";
+    src: url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff'),
+        url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2'),
+        url('../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:"Young Serif";
+    src:url('../fonts/youngserif/YoungSerif-Regular.otf');
+}
+
+html{
+    font-size: 125%;
+}
+
+body{
+    font-family: $bodyFont;
+    font-weight: normal;
+    color:$primary;
+}
+
+h1, h2, h3, h4, blockquote {
+    font-family: $headingFont;
+    font-weight: normal;
+    color: $primary;
+    margin:0;
+}
+
+// Set the heading font-sizes
+h1 {
+    font-size:1.4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-size: 2.7rem;
+}
+h4{
+    font-size: 1.7rem;
+}
+h5{
+    font-family: 0.7rem;
+}
+
+ul,
+li,
+a,
+input {
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
