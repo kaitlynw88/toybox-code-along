@@ -551,6 +551,7 @@ h3 {
   background-position: center;
   background-size: cover;
   min-height: 90vh;
+  margin-bottom: 0;
 }
 .play .wrapper {
   display: -webkit-box;
@@ -570,4 +571,34 @@ h3 {
   background-color: #fff;
   padding: 60px;
   text-align: center;
+}
+
+footer {
+  background: #084b6d;
+  color: #fff;
+  padding: 75px;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerLogo h4 {
+  color: #fff;
+}
+
+.footerNav {
+  width: 40%;
+}
+.footerNav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
