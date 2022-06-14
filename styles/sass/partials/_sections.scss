@@ -1,3 +1,7 @@
+.categories{
+    margin-top:80px;
+}
+
 .categoryList{
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +34,28 @@
         }
         &:hover{
             transform: scale(0.9);
+        }
+    }
+}
+
+// Let Them Play
+
+.play{
+    background-image: url(../assets/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        .playContent{
+            width: 60%;
+            border:24px solid $secondary;
+            background-color: $solidWhite;
+            padding:60px;
+            text-align: center;
         }
     }
 }

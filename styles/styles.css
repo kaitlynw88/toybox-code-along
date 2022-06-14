@@ -502,6 +502,10 @@ h3 {
   font-size: 1.2rem;
 }
 
+.categories {
+  margin-top: 80px;
+}
+
 .categoryList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,4 +544,30 @@ h3 {
 .categoryList .items:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.play {
+  background-image: url(../assets/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+}
+.play .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90vh;
+}
+.play .wrapper .playContent {
+  width: 60%;
+  border: 24px solid #f4fcff;
+  background-color: #fff;
+  padding: 60px;
+  text-align: center;
 }
