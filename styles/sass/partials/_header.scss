@@ -15,6 +15,26 @@ header .wrapper{
 .textContainer {
     flex-basis:48%;
 }
-h3{
-    font-size: 1.2rem;
+
+// contact page styles
+
+.contactHeader{
+    background-color: $quaternary;
+    padding-top:120px;
+}
+
+.contactHeader .wrapper{
+    flex-direction: column;
+    margin:0 auto;
+    padding:50px;
+}
+
+.contactHeader::after {
+    content:"";
+    width:100%;
+    height:150px;
+    background-image: url(../assets/wave.svg);
+    background-size: 100% 150px;
+    background-color: $quaternary;
+    display: inline-block;
 }
