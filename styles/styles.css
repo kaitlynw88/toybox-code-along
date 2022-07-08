@@ -427,6 +427,86 @@ section {
   text-align: center;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: #fff;
+  color: black;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.announcements {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  border-top: 1px solid rgba(8, 75, 109, 0.08);
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
+  z-index: 10;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  left: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+.searchCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchCart .menuIcon,
+.searchCart .bag {
+  margin-right: 15px;
+}
+.searchCart .bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchCart .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.searchCart .counter p {
+  width: 24px;
+  height: 24px;
+  background: #084b6d;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
 .slideOutNav {
   background-color: #084b6d;
   position: fixed;
@@ -466,10 +546,6 @@ section {
   font-size: 1.2rem;
 }
 
-.menuButton {
-  cursor: pointer;
-}
-
 header {
   background-color: #f8fbf3;
 }
@@ -498,6 +574,10 @@ header .wrapper {
       flex-basis: 48%;
 }
 
+.searchCartInput {
+  margin: 0 10px;
+}
+
 .contactHeader {
   background-color: #fff5f5;
   padding-top: 120px;
@@ -517,9 +597,10 @@ header .wrapper {
   width: 100%;
   height: 150px;
   background-image: url(../assets/wave.svg);
-  background-size: 100% 150px;
+  background-size: 100% 100%;
   background-color: #fff5f5;
   display: block;
+  background-repeat: no-repeat;
 }
 
 .categories {
