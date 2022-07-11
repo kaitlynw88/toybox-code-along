@@ -5,60 +5,48 @@ const toys = {
     safari: [
         {
             name: "lion",
-            price: "10:00"
         },
         {
             name: "giraffe",
-            price: "10:00"
         },
         {
             name: "zebra",
-            price: "10:00"
         },
 
         {
             name: "elephant",
-            price: "10:00"
         }
     ],
 
     ocean: [
         {
             name: "whale",
-            price: "10:00"
         },
         {
             name: "octopus",
-            price: "10:00"
         },
         {
             name: "star fish",
-            price: "10:00"
         },
 
         {
             name: "turtle",
-            price: "10:00"
         }
     ],
 
     dinos: [
         {
             name: "T-rex",
-            price: "10:00"
         },
         {
             name: "triceratops",
-            price: "10:00"
         },
         {
             name: "raptor",
-            price: "10:00"
         },
 
         {
             name: "stegosaurus",
-            price: "10:00"
         }
     ]
 }
@@ -69,7 +57,9 @@ const toys = {
 // store the searchCart elements in a variable
 const searchForm = document.querySelector(".searchForm")
 const searchBarIcon = document.querySelector(".menuIcon")
-const printToyList = document.querySelector(".javaArea")
+const ulElement = document.querySelector(".toyUl")
+const toyListContainer = document.querySelector(".javaArea")
+
 
 // add an event listener for when the user clicks the searchCart Button
 searchBarIcon.addEventListener("click", function(e){
@@ -89,28 +79,50 @@ searchBarIcon.addEventListener("click", function(e){
 
         // take users input and put it in a variable
         const userInput = searchForm.firstElementChild.value
-        console.log(userInput)
+        // console.log(userInput)
 
         // find the array corresponding to toy
         const toyArray = toys[userInput]
-        console.log(toyArray)
+        // console.log(toyArray)
 
         // evaluate if user picked a category
         if(toys[userInput]){
-            // print toy options and print out
+            // print toy options and print out on page
             for (let i = 0; i < toyArray.length; i++) {
-                const toyName = toyArray[i]
-                console.log(toyName.name)
+                const toyList = toyArray[i]
+                const toyName =toyList.name
+                console.log(toyName)
 
-                // make a P element for toy name
+                // make a li element
+                const listItem = document.createElement("li")
+
+                // create a p element for our toyname
+                const toyP = document.createElement("p")
+                console.log(toyP)
+
+                // assign the toyName to each p
+                toyP.textContent = toyName
+
+                // add p element to List item
+                listItem.append(toyP)
+
+                // add listItem to ulElement
+                ulElement.append(listItem)
+
             }
         }else{
             alert("please pick safari, ocean or dinos. **Case sensitive**")
         }
 
-        
+       
+        // create a header h3 element
+        const headerItem = document.createElement("h4")
+        // assign a value to the headerItem
 
-        // if users input equals toys category, print category names in alert
+        headerItem.textContent = "here are the toys you wanted"
+
+        // append the h3 element to the search form
+        toyListContainer.append(headerItem)
     })
     
 
